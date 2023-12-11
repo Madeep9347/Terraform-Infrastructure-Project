@@ -43,12 +43,11 @@ variable "instance_class" {
   
 }
 
-variable "db_username" {
-  type    = string
+variable "manage_master_user_password" {
+  type    = bool
   
 }
-
-variable "db_password" {
+variable "db_username" {
   type    = string
   
 }
