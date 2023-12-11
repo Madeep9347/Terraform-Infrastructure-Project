@@ -47,7 +47,7 @@ module "databases" {
   db_name                      = "mydb"    
   db_engine                    = "mysql"   
   db_username                  = "madhu"
-  db_password                  = "madhu1234"
+  db_password                  = "Siri#4830"
   engine_version               = "5.7"
   instance_class               = "db.t3.micro"
   manage_master_user_password  = true
