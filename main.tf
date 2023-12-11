@@ -46,11 +46,10 @@ module "databases" {
   db_identifier                = "rds-db"  
   db_name                      = "mydb"    
   db_engine                    = "mysql"   
+  engine_version               = "5.7"
   db_username                  = "madhu"
   db_password                  = "Siri#4830"
-  engine_version               = "5.7"
-  instance_class               = "db.t3.micro"
-  manage_master_user_password  = true
+  instance_class               = "db.t2.micro"
   parameter_group_name         = "default.mysql5.7"
   skip_final_snapshot          = true
   final_snapshot_identifier    = "rds-db-snapshot5"
