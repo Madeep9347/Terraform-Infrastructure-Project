@@ -48,7 +48,7 @@ module "databases" {
   db_engine                    = "mysql"   
   engine_version               = "5.7"
   db_username                  = "madhu"
-  db_password                  = "Siri#4830"
+  db_password                  = "Madhu@9347"
   instance_class               = "db.t2.micro"
   parameter_group_name         = "default.mysql5.7"
   skip_final_snapshot          = true
