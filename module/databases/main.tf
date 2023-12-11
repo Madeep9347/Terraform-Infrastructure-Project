@@ -19,9 +19,9 @@ resource "aws_db_instance" "default" {
   engine                        = var.db_engine
   engine_version                = var.engine_version
   instance_class                = var.instance_class
-  manage_master_user_password   = var.manage_master_user_password
   master_user_secret_kms_key_id = aws_kms_key.example.key_id
   username                      = var.db_username
+  password                      = var.db_password
   parameter_group_name          = var.parameter_group_name
   db_subnet_group_name          = aws_db_subnet_group.example.name
   vpc_security_group_ids        = [var.rds_sg_id]
