@@ -41,21 +41,20 @@ module "databases" {
   vpc_id              = module.network.vpc_id
   private_subnet_ids  = module.network.private_subnet_ids
   rds_sg_id           = module.security.rds_security_group_id
-  aws_db_subnet_group = "my-new-db-subnet-group-12"
-  allocated_storage   = 10
-  db_identifier       = "rds-db"  
-  db_name             = "mydb"    
-  db_engine           = "mysql" 
-  engine_version      = "5.7"  
-  instance_class      = "db.t3.micro"
-  db_username         = "madhu"
-  db_password         = "Madhu@9347"
-  parameter_group_name = "default.mysql5.7"
-  skip_final_snapshot = true
-  final_snapshot_identifier = "rds-db-snapshot5"
+  aws_db_subnet_group    = "my-new-db-subnet-group-12"
+  allocated_storage             = 10
+  db_identifier                = "rds-db"  
+  db_name                      = "mydb"    
+  db_engine                    = "mysql"   
+  db_username                  = "madhu"
+  engine_version               = "5.7"
+  instance_class               = "db.t3.micro"
+  manage_master_user_password  = true
+  parameter_group_name         = "default.mysql5.7"
+  skip_final_snapshot          = true
+  final_snapshot_identifier    = "rds-db-snapshot5"
   # Add other necessary arguments specific to the databases module
 }
-
 module "security" {
   source              = "./module/security"
   vpc_id              = module.network.vpc_id
