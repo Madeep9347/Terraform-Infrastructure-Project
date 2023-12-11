@@ -52,6 +52,11 @@ variable "db_username" {
   
 }
 
+variable "db_password" {
+  type    = string
+  
+}
+
 variable "parameter_group_name" {
   type    = string
   
