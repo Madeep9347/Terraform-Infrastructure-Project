@@ -53,7 +53,7 @@ module "databases" {
   parameter_group_name         = "default.mysql5.7"
   skip_final_snapshot          = true
   final_snapshot_identifier    = "rds-db-snapshot5"
-  # Add other necessary arguments specific to the databases module
+  #Add other necessary arguments specific to the databases module
 }
 module "security" {
   source              = "./module/security"
