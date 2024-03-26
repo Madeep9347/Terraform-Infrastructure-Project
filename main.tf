@@ -32,7 +32,7 @@ module "instances" {
   instance_count     =  2                                    # Replace with your desired  count
   ami                =  "ami-0fc5d935ebf8bc3bc"              # Replace with your AMI ID
   instance_type      = "t2.micro"                            # Replace with your  instance type
-  key_name           =  "terraformproject"                   # Replace with your  key name
+  key_name           =  "madeepkey"                   # Replace with your  key name
   iam_instance_profile = "roleforec2codedeploy"              # Replace with your default IAM instance profile
 }
 
